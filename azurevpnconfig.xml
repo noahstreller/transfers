@@ -1,0 +1,50 @@
+<AzVpnProfile xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/">
+  <any xmlns:d2p1="http://schemas.datacontract.org/2004/07/System.Xml"
+    i:nil="true" />
+  <clientauth>
+    <aad>
+      <audience>41b23e61-6c1e-4545-b367-cd054e0ed4b4</audience>
+      <cachesigninuser>true</cachesigninuser>
+      <issuer>https://sts.windows.net/431bf953-aee8-46cc-b7ee-3a7dfd0496cb/</issuer>
+      <tenant>https://login.microsoftonline.com/431bf953-aee8-46cc-b7ee-3a7dfd0496cb/</tenant>
+    </aad>
+    <cert
+      i:nil="true" />
+    <type>aad</type>
+    <usernamepass
+      i:nil="true" />
+  </clientauth>
+  <clientconfig>
+    <dnsservers>
+      <dnsserver>172.23.20.196</dnsserver>
+    </dnsservers>
+    <includeroutes>
+      <route>
+        <destination>91.206.104.206</destination><mask>32</mask>
+      </route>
+    </includeroutes>
+  </clientconfig>
+  <name>DevLan2.0</name>
+  <protocolconfig>
+    <sslprotocolConfig>
+      <transportprotocol>tcp</transportprotocol>
+    </sslprotocolConfig>
+  </protocolconfig>
+  <serverlist>
+    <ServerEntry>
+      <displayname
+        i:nil="true" />
+      <fqdn>azuregateway-56fe007b-ace9-4993-b202-3d40641173d4-36359773ca0a.vpn.azure.com</fqdn>
+    </ServerEntry>
+  </serverlist>
+  <servervalidation>
+    <cert>
+      <hash>A8985D3A65E5E5C4B2D7D66D40C6DD2FB19C5436</hash>
+      <issuer
+        i:nil="true" />
+    </cert>
+    <serversecret>fa30d1d3c4fe682dd891a52ea0a60e14664322ebe1d124a1ab739fc03cc4227af6096fe87f61675e83e2577bc6a38c8078c661210a20e5e5164076f6a9f08ef6d8c8a07a4241d1c621b05348e86bd4e918ccf1b3a44b4b30e81f550a0f9bb8647519f6408c395b1c0aaeae0eac65a26e0e4cb03d3e585c0e1f262f1cfe61b898dd84af9264806572d1154bf4ffcbccf2899dfd44c02237bb52257c982ce39b929de24fdc8c5187d5bb4012d44587e2eace02f27a5b1aff3874f777570cfc8e4d56e6e72b793d002dbcf2aaa0c7f57fbbd2ea4cb1f530c619693fb6391634074c5f25e9796b2943f846e5aa8c5cf95478f52907a828a4a13d9f7d86faf203d6d2</serversecret>
+    <type>cert</type>
+  </servervalidation>
+  <version>1</version>
+</AzVpnProfile>
